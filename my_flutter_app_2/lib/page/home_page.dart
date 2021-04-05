@@ -7,19 +7,14 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("App cool"),
-      ),
-      body: Center(
-        child: CircleContainer(
-            child: SvgPicture.asset(
-              "assets/icons/menu.svg",
-              width: 30,
-              height: 30,
-              color: Colors.blue,
-            ),
-            width: 100,
-            height: 100),
+      backgroundColor: Colors.white,
+      body: SafeArea(
+        top: true,
+        bottom: true,
+        child: Container(
+          child: Text("Holi"),
+          alignment: Alignment.bottomCenter,
+        ),
       ),
     );
   }
