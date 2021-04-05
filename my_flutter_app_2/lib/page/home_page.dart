@@ -12,8 +12,26 @@ class HomePage extends StatelessWidget {
         top: true,
         bottom: true,
         child: Container(
-          child: Text("Holi"),
-          alignment: Alignment.bottomCenter,
+          width: double.infinity,
+          color: Colors.grey,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisSize: MainAxisSize.max,
+            children: <Widget>[
+              Text("Helow"),
+              Text(
+                "Dani",
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              ),
+              Container(
+                height: 1,
+                width: 100,
+                margin: EdgeInsets.symmetric(vertical: 20),
+                color: Colors.amber,
+              )
+            ],
+          ),
         ),
       ),
     );
