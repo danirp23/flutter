@@ -8,14 +8,14 @@ class CircleContainer extends StatelessWidget {
   CircleContainer(
       {@required this.child, @required this.height, @required this.width})
       : assert(child != null),
-        assert(width != null && width >= 100),
-        assert(height != null && height >= 100);
+        assert(width != null && width >= 10),
+        assert(height != null && height >= 10);
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 100,
-      height: 100,
+      width: width,
+      height: height,
       alignment: Alignment.center,
       child: this.child,
       decoration: BoxDecoration(
