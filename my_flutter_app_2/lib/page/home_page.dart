@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import '../widgets/circle_container.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -9,17 +10,7 @@ class HomePage extends StatelessWidget {
         title: Text("App cool"),
       ),
       body: Center(
-        child: Text("Holi\n xd",
-            textAlign: TextAlign.center,
-            style: TextStyle(
-                color: Colors.green,
-                fontSize: 25,
-                fontWeight: FontWeight.w300,
-                letterSpacing: 2.5,
-                shadows: [
-                  Shadow(
-                      color: Colors.black, blurRadius: 3, offset: Offset(2, 1))
-                ])),
+        child: CircleContainer(child: Text("Holi"), width: 100, height: 100),
       ),
     );
   }
