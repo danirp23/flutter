@@ -13,7 +13,7 @@ class Avatar extends StatelessWidget {
       child: Stack(
         children: <Widget>[
           SvgPicture.network(
-              'https://www.flaticon.com/svg/vstatic/svg/1177/1177568.svg?token=exp=1617721622~hmac=2ec03aa00edbe4404bdfcdc884b86bce'),
+              'https://www.flaticon.com/svg/vstatic/svg/747/747545.svg?token=exp=1617723304~hmac=665e4c23886c0bb89bf8def8dd81ce23'),
           Positioned(
             child: CircleContainer(
               child: Icon(Icons.edit),

@@ -37,12 +37,28 @@ class HomePage extends StatelessWidget {
                 "Dani",
                 style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
               ),
+              TextButton.icon(
+                icon: Icon(Icons.camera),
+                label: Text('Take A Photo'),
+                onPressed: () {},
+              ),
               Container(
                 height: 1,
                 width: 100,
                 margin: EdgeInsets.symmetric(vertical: 20),
                 color: Colors.amber,
               ),
+              TextButton(
+                child: Text("UPLOAD", style: TextStyle(color: Colors.blue)),
+                onPressed: () => print("uploading"),
+              ),
+              CupertinoButton(
+                child: Text("UPLOAD"),
+                color: Colors.blue,
+                minSize: 30,
+                padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                onPressed: () => print("uploading"),
+              )
               /* Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 mainAxisSize: MainAxisSize.max,
