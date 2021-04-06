@@ -25,7 +25,7 @@ class CircleContainer extends StatelessWidget {
             BoxShadow(
                 color: Colors.black87, blurRadius: 10, offset: Offset(10, 10)),
             BoxShadow(
-                color: Colors.blueAccent.withOpacity(0.5),
+                color: Colors.amberAccent.withOpacity(0.5),
                 blurRadius: 20,
                 offset: Offset(10, 10))
           ]),
