@@ -17,7 +17,7 @@ class BottomMenu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.amberAccent,
+      color: Colors.white,
       padding: EdgeInsets.all(10),
       child: SafeArea(
           child: Row(
@@ -31,7 +31,11 @@ class BottomMenu extends StatelessWidget {
                 item.iconPath,
                 width: 30,
               ),
-              Text(item.label)
+              SizedBox(height: 3),
+              Text(
+                item.label,
+                style: TextStyle(fontSize: 12),
+              )
             ],
           );
         }),

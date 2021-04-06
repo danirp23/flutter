@@ -11,9 +11,12 @@ class HomePage extends StatelessWidget {
       backgroundColor: Colors.white,
       bottomNavigationBar: BottomMenu(
         items: [
-          BottoMenuItem(iconPath: 'assets/icons/menu.svg', label: 'Inicio'),
-          BottoMenuItem(iconPath: 'assets/icons/menu.svg', label: 'Historial'),
-          BottoMenuItem(iconPath: 'assets/icons/menu.svg', label: 'Noticias'),
+          BottoMenuItem(iconPath: 'assets/icons/home.svg', label: 'Inicio'),
+          BottoMenuItem(iconPath: 'assets/icons/menu.svg', label: 'Menu'),
+          BottoMenuItem(
+              iconPath: 'assets/icons/history.svg', label: 'Historial'),
+          BottoMenuItem(
+              iconPath: 'assets/icons/checkmark.svg', label: 'Ofertas'),
         ],
       ),
       body: SafeArea(
@@ -54,7 +57,8 @@ class HomePage extends StatelessWidget {
                   ),
                   CircleContainer(
                       child: Icon(Icons.add), height: 50, width: 50),
-                  Container(width: 100, height: 100, color: Colors.red)
+                  Container(
+                      width: 100, height: 100, color: Colors.amber.shade300)
                 ],
               )
             ],
