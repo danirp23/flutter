@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:my_flutter_app_2/widgets/avatar.dart';
 import 'package:my_flutter_app_2/widgets/bottom_menu.dart';
 import '../widgets/circle_container.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -24,12 +25,13 @@ class HomePage extends StatelessWidget {
         bottom: true,
         child: Container(
           width: double.infinity,
-          color: Colors.grey,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             mainAxisSize: MainAxisSize.max,
             children: <Widget>[
+              Avatar(),
+              SizedBox(height: 20),
               Text("Helow"),
               Text(
                 "Dani",
@@ -41,7 +43,7 @@ class HomePage extends StatelessWidget {
                 margin: EdgeInsets.symmetric(vertical: 20),
                 color: Colors.amber,
               ),
-              Row(
+              /* Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 mainAxisSize: MainAxisSize.max,
                 children: [
@@ -60,7 +62,7 @@ class HomePage extends StatelessWidget {
                   Container(
                       width: 100, height: 100, color: Colors.amber.shade300)
                 ],
-              )
+              ) */
             ],
           ),
         ),

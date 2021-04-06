@@ -3,19 +3,18 @@ import 'package:flutter/material.dart';
 
 class CircleContainer extends StatelessWidget {
   final Widget child;
-  final double width, height;
+  final double size;
 
   CircleContainer(
-      {@required this.child, @required this.height, @required this.width})
+      {@required this.child, @required this.size})
       : assert(child != null),
-        assert(width != null && width >= 10),
-        assert(height != null && height >= 10);
+        assert(size != null && size >= 10),
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: width,
-      height: height,
+      width: size,
+      height: size,
       alignment: Alignment.center,
       child: this.child,
       decoration: BoxDecoration(
